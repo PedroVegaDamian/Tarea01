@@ -1,0 +1,72 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1201px) {
+  h1 {
+    text-align: center;
+  }
+
+  #datos, #descripcion, #contenido {
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  #datos {
+   width: 33%;
+  }
+
+  #descripcion {
+   width: 33%;
+  }
+
+  #contenido {
+   width: 33%;
+  }  
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  h1 {
+    text-align: center;
+  }
+
+  #datos, #principal {
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  #datos {
+   width: 30%;
+  }
+
+  #principal {
+    width: 70%;
+  }
+
+  #apartados {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #apartados li {
+    float: left;
+    width: 33%;
+  }
+}
+
+@media (max-width: 600px) {
+  #datos ul {
+    padding-left: 0;
+  }
+
+  #datos li {
+    display: inline;
+  }
+  
+  #datos li:after {
+    content: "; ";
+  }
+}
